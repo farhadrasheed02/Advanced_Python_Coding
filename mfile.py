@@ -18,7 +18,23 @@ a = 44  # Global  Variable
 # print(f"The value of a defined outside function is : - {a}")
 
 """Enumerate Function """
-lst = ['farhad',20.2,False,22]
+# lst = ['farhad',20.2,False,22]
+#
+# # for i in lst:
+# #     print(i)
+# for item,index in enumerate(lst):
+#     print(item, index)
 
-for i in lst:
-    print(i)
+""" List Comprehension """
+
+a1 = [2, 4, 6, 9, 10, 21, 25, 29, 30]
+
+# for item in a1:
+#     if item%2==0:
+#         b.append(item)
+# print(b)
+b = [i for i in a1 if i % 2 == 0] # unique way of creating a list from existing List
+print(b)
+t= [1,2,3,4,5,4,6,8]
+s= {i for i in t}
+print(s)
