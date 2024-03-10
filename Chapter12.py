@@ -52,11 +52,24 @@
 
 """ Try except and Finally """
 
-try:
-    a = int(input("Enter the num "))
-    c = 5 / a
-    print(c)
-except Exception as e:
-    print(e)
-finally:
-    print("We have done this part")  # This part will get execute even after the exception is raised
+# try:
+#     a = int(input("Enter the num "))
+#     c = 5 / a
+#     print(c)
+# except Exception as e:
+#     print(e)
+# finally:
+#     print("We have done this part")  # This part will get execute even after the exception is raised
+
+""" 
+use of __main__ function
+"""
+
+
+def greet(name):
+    print(f"Good Morning {name}")
+
+
+# if __name__ == "__main__":
+    a = input("Enter the name \n")
+    greet(a)
